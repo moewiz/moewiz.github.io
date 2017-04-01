@@ -34,6 +34,7 @@ body {
       display: none;
       cursor: pointer; }
     .header .nav-bar #nav-feature {
+      display: block;
       text-align: center;
       list-style: none; }
       .header .nav-bar #nav-feature li {
@@ -62,7 +63,7 @@ body {
   .header .nav-bar #toggle-nav {
     display: block; }
 
-  #nav-feature {
+  .header .nav-bar #nav-feature {
     display: none; } }
 
 /*# sourceMappingURL=main.css.map */
