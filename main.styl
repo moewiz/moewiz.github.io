@@ -1,4 +1,10 @@
-color_black=rgba(0, 0, 0, 0.7)
+@import 'nib'
+
+color_dark=rgba(0, 0, 0, 0.7)
+color_blue=#3498db
+color_red=#ff5e37
+background_light=#eeeeee
+background_dark=#283442
 
 *
   margin 0
@@ -8,16 +14,16 @@ color_black=rgba(0, 0, 0, 0.7)
 body
   font-family "Helvetica Neue", Helvetica, Arial, sans-serif
   background-color #fafafa
-  color color_black
+  color color_dark
   font-size 14px
   font-weight 400
 
 .header
   display flex
   justify-content space-between
-  border-bottom 1px solid color_black
+  border-bottom 1px solid color_dark
   .logo
-    border-right 1px solid color_black
+    border-right 1px solid color_dark
     padding 15px
     a
       display block
@@ -47,13 +53,13 @@ body
         font-size 20px
         a
           display block
-          color color_black
+          color color_dark
           font-weight 500
           text-decoration none
           padding  20px
 
   .social
-    border-left 1px solid color_black
+    border-left 1px solid color_dark
     padding 15px
     a
       display block
@@ -65,6 +71,30 @@ body
 
       &:hover
         transform scale(1.2)
+.social-wrapper
+  padding-bottom 84px
+#main-footer
+  height 50em
+  position relative
+  background background_dark
+  &:before
+    content ''
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 5px
+    background repeating-linear-gradient(
+      -45deg,
+      color_blue,
+      color_blue 7px,
+      background_light 7px,
+      background_light 14px,
+      color_red 14px,
+      color_red 21px,
+      background_light 21px,
+      background_light 28px
+    )
 
 @media screen and (max-width 480px)
   .header .nav-bar #toggle-nav
