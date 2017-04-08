@@ -113,6 +113,7 @@ body
   padding-top 60px
   background linear-gradient(#fafafa, color_red)
   .about-me
+    font-family "Bitter", Helvetica, Arial, sans-serif;
     position relative
     margin 0 auto
     width 600px

@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   background-color: #fafafa;
   color: rgba(0,0,0,0.7);
   font-size: 14px;
@@ -25,7 +25,7 @@ body {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .header .logo {
   display: -webkit-box;
@@ -40,8 +40,7 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  padding-top: 20px;
-  padding-left: 40px;
+  padding: 20px 0px 20px 40px;
 }
 .header .logo a {
   width: 60px;
@@ -67,7 +66,7 @@ body {
   transform: scale(1.2);
 }
 .header .logo .author {
-  margin-left: 10px;
+  margin-left: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 800;
@@ -75,8 +74,7 @@ body {
   cursor: pointer;
 }
 .header .nav-bar {
-  padding-top: 20px;
-  padding-right: 40px;
+  padding: 20px 40px 20px 0px;
 }
 .header .nav-bar #toggle-nav {
   display: none;
@@ -105,7 +103,7 @@ body {
   display: block;
   color: rgba(0,0,0,0.7);
   outline: none;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
@@ -193,6 +191,73 @@ body {
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+}
+#home {
+  padding-top: 60px;
+  background: -webkit-linear-gradient(#fafafa, #ff5e37);
+  background: -moz-linear-gradient(#fafafa, #ff5e37);
+  background: -o-linear-gradient(#fafafa, #ff5e37);
+  background: -ms-linear-gradient(#fafafa, #ff5e37);
+  background: linear-gradient(#fafafa, #ff5e37);
+}
+#home .about-me {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: url("../public/avatar.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: -175px 0px;
+}
+#home .about-me .header-icon {
+  position: relative;
+  top: -60px;
+  left: 40%;
+  width: 130px;
+  height: 130px;
+  background: url("../public/header-icon.png") no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+}
+#home .about-me .header-icon .first-name,
+#home .about-me .header-icon .last-name {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+}
+#home .about-me .header-icon .first-name {
+  top: 42px;
+  left: 38px;
+}
+#home .about-me .header-icon .last-name {
+  top: 62px;
+  left: 27px;
+}
+#home .about-me .greeting {
+  color: #ff5e37;
+  position: absolute;
+  width: 720px;
+  left: -53px;
+  bottom: 40px;
+  font-family: "Bitter", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+#home .about-me .greeting .say-hi {
+  font-size: 80px;
+  font-weight: 600;
+  text-align: center;
+}
+#home .about-me .greeting .description {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 32px;
 }
 .social-wrapper {
   padding-bottom: 84px;
