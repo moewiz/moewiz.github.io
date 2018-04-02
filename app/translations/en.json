@@ -1,0 +1,7 @@
+{
+  "portfolio.components.Footer.author.message": "Made with love by {author}",
+  "portfolio.components.Footer.license.message": "MIT lisence",
+  "portfolio.containers.LocaleToggle.en": "English",
+  "portfolio.containers.LocaleToggle.vi": "Tiếng Việt",
+  "portfolio.containers.NotFoundPage.header": "Page not found."
+}
