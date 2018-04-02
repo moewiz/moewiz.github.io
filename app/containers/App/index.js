@@ -20,6 +20,7 @@ import HomePage from 'containers/HomePage/Loadable';
 // import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Footer from 'components/Footer';
+import LoadingIndicator from 'components/LoadingIndicator';
 
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
@@ -40,6 +41,7 @@ export default function App() {
         <meta name="description" content="Moewiz - Khoa Nguyen portfolio" />
       </Helmet>
       <Switch>
+        <LoadingIndicator />
         <Route exact path="/" component={HomePage} />
         {/* <Route path="/features" component={FeaturePage} /> */}
         <Route component={NotFoundPage} />
