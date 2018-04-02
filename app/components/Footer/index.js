@@ -2,6 +2,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import LocaleToggle from 'containers/LocaleToggle';
+import A from '../A';
 import Wrapper from './Wrapper';
 import messages from './messages';
 
@@ -18,7 +19,7 @@ function Footer() {
         <FormattedMessage
           {...messages.authorMessage}
           values={{
-            author: <a href="https://github.com/moewiz">Moewiz</a>,
+            author: <A href="https://github.com/moewiz">Moewiz</A>,
           }}
         />
       </section>
